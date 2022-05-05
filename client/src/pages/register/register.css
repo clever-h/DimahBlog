@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'VazirMedium';
+  src: url('../../../public/fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../../../public/fonts/Vazir-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-body: VazirMedium;
+  --font-display: VazirMedium, var(--font-body);
+}
+html,
+body {
+  font-family: 'VazirMedium';
+}
+body {
+  font-family: var(--font-body);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+h5,
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.register {
+  height: calc(100vh - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(252, 246, 246, 0.5),
+    rgba(255, 253, 253, 0.5)
+  ),
+  url('../../../public/login.jpg');
+background-size: cover;
+}
+
+.registerTitle {
+  font-size: 15px;
+  margin-top: 33px;
+}
+
+.registerForm {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  font-size: 8px;
+}
+.registerForm > ::placeholder {
+  font-size: 10px;
+  font-family: 'VazirMedium';
+}
+
+.registerForm > label {
+  margin: 5px 0;
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  height: 28px;
+}
+
+.registerButton {
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: teal;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: 'VazirMedium';
+  font-size: 10px;
+}
+
+.registerLoginButton {
+  position: absolute;
+  top: 60px;
+  right: 12px;
+  background-color: rgb(207, 170, 170);
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+  color: white;
+  border-radius: 10px;
+  font-family: 'VazirMedium';
+  font-size: 5px;
+}
+@media screen and (max-width: 205px) {
+  .register {
+    height: calc(100vh - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url('https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+  }
+
+  .registerTitle {
+    font-size: 12px;
+    margin-top: 33px;
+  }
+
+  .registerForm {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    font-size: 8px;
+    width: 80%;
+  }
+  .registerForm > ::placeholder {
+    font-size: 7px;
+    font-family: 'VazirMedium';
+  }
+
+  .registerForm > label {
+    margin: 2px 0;
+  }
+
+  .registerInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    height: 15px;
+  }
+
+  .registerButton {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    height: 20px;
+    font-family: 'VazirMedium';
+    font-size: 8px;
+  }
+
+  .registerLoginButton {
+    position: absolute;
+    top: 300px;
+    width: 50%;
+    right: 42px;
+    background-color: rgb(207, 170, 170);
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    font-family: 'VazirMedium';
+    font-size: 5px;
+  }
+}

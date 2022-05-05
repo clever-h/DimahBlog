@@ -1,0 +1,122 @@
+.post {
+  margin: 0px 25px 40px 25px;
+}
+
+.postImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.postCat {
+  font-family: 'VazirMedium';
+  font-size: 11px;
+  color: #be9656;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.postTitle {
+  font-family: 'VazirMedium';
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.postDate {
+  font-family: 'VazirMedium';
+  font-style: italic;
+  font-size: 13px;
+  color: #999;
+  margin-top: 15px;
+}
+
+.postDesc {
+  direction: rtl;
+  font-family: 'VazirMedium';
+  font-size: 14px;
+  color: #444;
+  line-height: 20px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media only screen and (max-width: 490px) and (min-width: 240px) {
+  .post {
+    float: left;
+    width: 100%;
+  }
+  .postImg {
+    object-fit: cover;
+  }
+
+  .postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .postCat {
+    font-family: 'VazirMedium';
+    font-size: 9px;
+    color: #be9656;
+    line-height: 20px;
+    margin-top: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .postTitle {
+    font-family: 'VazirMedium';
+    font-size: 6px;
+    font-weight: 700;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 240px) {
+  .postImg {
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  .postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .postCat {
+    font-family: 'VazirMedium';
+    font-size: 9px;
+    color: #be9656;
+    line-height: 20px;
+    margin-top: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .postTitle {
+    font-family: 'VazirMedium';
+    font-size: 6px;
+    font-weight: 700;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+}

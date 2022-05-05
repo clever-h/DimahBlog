@@ -1,0 +1,124 @@
+.sidebar {
+  width: 30%;
+  height: 90vh;
+  margin: 20px;
+  padding-bottom: 30px;
+  background-color: #fdfbfb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: right;
+  grid-column-gap: 10px;
+}
+
+.sidebarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  border-top: 1px solid #a7a4a4;
+  border-bottom: 1px solid #a7a4a4;
+  font-family: 'VazirMedium';
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.sidebarItem > img {
+  width: 6rem;
+  height: 6rem;
+  margin-top: 15px;
+  border-radius: 3rem;
+}
+
+.sidebarItem > p {
+  padding: 30px;
+  direction: rtl;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.sidebarList {
+  list-style: none;
+  margin-bottom: 30px;
+  width: 400px;
+}
+
+.sidebarListItem {
+  display: inline-block;
+  width: 40%;
+  margin-top: 20px;
+  cursor: pointer;
+  direction: rtl;
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
+
+.sidebarSocial {
+  margin-top: 15px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarIcon {
+  font-size: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 30%;
+    height: 110vh;
+    direction: rtl;
+    float: right;
+  }
+  .sidebarItem > img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+  }
+  .sidebarItem > p {
+    padding: 0.2rem;
+    font-size: 0.3rem;
+    direction: rtl;
+  }
+  .sidebarTitle {
+    margin: 10px;
+    padding: 5px;
+    width: 24vw;
+    font-family: 'VazirMedium';
+    font-size: 6px;
+    color: #222;
+    font-weight: 150;
+    line-height: 0.8rem;
+    text-align: center;
+  }
+  .sidebarIcon {
+    font-size: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .sidebarListItem {
+    cursor: pointer;
+    margin-left: 4px;
+    font-size: 4px;
+    margin-right: 11px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .sidebar {
+    display: none;
+  }
+}

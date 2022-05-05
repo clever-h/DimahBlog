@@ -1,0 +1,143 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(252, 246, 246, 0.5),
+      rgba(255, 253, 253, 0.5)
+    ),
+    url('../../../public/login.jpg');
+  background-size: cover;
+}
+
+.loginTitle {
+  font-size: 12px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+  font-size: 10px;
+}
+.loginForm > ::placeholder {
+  font-size: 8px;
+  font-family: 'VazirMedium';
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightcoral;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'VazirMedium';
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: rgb(252, 173, 173);
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  background-color: teal;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  font-family: 'VazirMedium';
+  font-size: 7px;
+  width: 40px;
+}
+@media screen and (max-width: 205px) {
+  .login {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(175, 196, 189, 0.685);
+  }
+
+  .loginTitle {
+    font-size: 12px;
+  }
+
+  .loginForm {
+    margin-top: 8px;
+    flex-direction: column;
+    direction: rtl;
+  }
+
+  .loginForm > label {
+    margin: 1px 0;
+    font-size: 7px;
+    padding: 5px;
+  }
+  .loginForm > input {
+    border-radius: 5px;
+    height: 16px;
+    padding: 2px;
+    width: 120px;
+  }
+  .loginForm > ::placeholder {
+    font-size: 7px;
+    font-family: 'VazirMedium';
+    align-items: center;
+    padding: 7px;
+  }
+
+  .loginInput {
+    padding: 3px;
+    background-color: white;
+    border: none;
+  }
+
+  .loginButton {
+    margin-top: 19px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 4px;
+    font-family: 'VazirMedium';
+    font-size: 5px;
+  }
+
+  .loginButton:disabled {
+    cursor: not-allowed;
+    background-color: rgb(252, 173, 173);
+  }
+
+  .loginRegisterButton {
+    position: absolute;
+    width: 50%;
+    top: 250px;
+    right: 42px;
+    background-color: teal;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'VazirMedium';
+    font-size: 5px;
+  }
+}

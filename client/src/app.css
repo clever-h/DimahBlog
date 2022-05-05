@@ -1,0 +1,82 @@
+/* @font-face {
+  font-family: Samim;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/Samim.eot');
+  src: url('../public/fonts/Samim.eot?#iefix') format('embedded-opentype'), 
+  url('../public/fonts/Samim.woff2') format('woff2'), 
+  url('../public/fonts/Samim.woff') format('woff'), 
+  url('../public/fonts/Samim.ttf') format('truetype');
+ }
+ @font-face {
+  font-family: Samim;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../public/fonts/Samim-Medium.eot');
+  src: url('../public/fonts/Samim-Medium.eot?#iefix') format('embedded-opentype'), 
+  url('../public/fonts/Samim-Medium.woff2') format('woff2'), 
+  url('../public/fonts/Samim-Medium.woff') format('woff'), 
+  url('../public/fonts/Samim-Medium.ttf') format('truetype');
+ } */
+
+
+
+@font-face {
+  font-family: 'VazirMedium';
+  src: url('../public/fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../public/fonts/Vazir-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-body: VazirMedium;
+  --font-display: VazirMedium, var(--font-body);
+}
+html,
+body {
+  font-family: 'VazirMedium';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+h5,
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
